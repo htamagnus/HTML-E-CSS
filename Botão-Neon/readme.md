@@ -1,4 +1,4 @@
-Criando botões brilhantes com aspecto de neon usando o CSS Hover e animações com o CSS Animation
+Criando botões brilhantes com aspecto de neon usando o CSS Hover e animações com o CSS Animation. <br>
 Resultado:
 ![image](https://user-images.githubusercontent.com/85269068/134518588-57b4c18f-4456-4646-989d-779532f0c23e.png)
 Ao passar o mouse:
