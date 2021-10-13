@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Gerenciamento de Tarefas Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="task-manager"></div>
+    <div class="left-bar">
+        <div class="upper-part">
+            <div class="actions">
+                <div class="circle"></div>
+                <div class="circle-2"></div>
+            </div>
+        </div>
+        <div class="left-content">
+            <ul class="action-list">
+                <li class="item">
+                    <img class="feather feather-inbox" src="Icons/inbox_icon.svg" alt="feather-inbox" />
+                    <span>Inbox</span>
+                </li>
+                <li class="item">
+                    <img class="feather feather-star" src="./Icons/star_icon.svg" alt="feather-star" />
+                    <span>Hoje</span>
+                </li>
+                <li class="item">
+                    <img class="feather feather-calendar" src="./Icons/calender_icon.svg" alt="feather-calendar" />
+                    <span>Próximos</span>
+                </li>
+                <li class="item">
+                    <img class="feather feather-hash" src="./Icons/hash_icon.svg" alt="feather-hash" />
+                    <span>Importante</span>
+                </li>
+                <li class="item">
+                    <img class="feather feather-users" src="./Icons/users_icon.svg" alt="feather-users" />
+                    <span>Encontros</span>
+                </li>
+                <li class="item">
+                    <img class="feather feather-trash" src="./Icons/trash_icon.svg" alt="feather-trash" />
+                    <span>Lixo</span>
+                </li>
+            </ul>
+            <ul class="category-list">
+                <li class="item">
+                    <img class="feather feather-users" src="./Icons/users_icon.svg" alt="feather-users" />
+                   <span>Família</span>
+                </li>
+                <li class="item">
+                    <img class="feather feather-sun" src="./Icons/sun_icon.svg" alt="feather-sun" />
+                    <span>Férias</span>
+                </li>
+                <li class="item">
+                    <img class="feather feather-trending-up" src="./Icons/trending_icon.svg" alt="feather-trending-up" />
+                    <span>Festival</span>
+                        </li>
+                <li class="item">
+                    <img class="feather feather-zap" src="./Icons/zap_icon.svg" alt="feather-zap">
+                    <span>Concertos</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="header">Today Task</div>
+        <div class="content-categories">
+            <div class="label-wrapper">
+                <input class="nav-item" name="nav" type="radio" id="opt-1" />
+                <label class="category" for="opt-1">All</label>
+            </div>
+            <div class="label-wrapper">
+                <input class="nav-item" type="radio" name="nav" id="opt-2" checked />
+                <label class="category" for="opt-2">Importante</label>
+            </div>
+            <div class="label-wrapper">
+                <input class="nav-item" type="radio" name="nav" id="opt-3" />
+                <label class="category" for="opt-3">Notas</label>
+            </div>
+            <div class="label-wrapper">
+                <input class="nav-item" type="radio" name="nav" id="opt-4" />
+                <label class="category" for="opt-4">Links</label>
+            </div>
+        </div>
+        <div class="task-wrapper">
+            <div class="task">
+                <input class="task-item" type="checkbox" name="task" id="item-1" checked/>
+                <label for="item-1">
+                    <span class="label-text">Dashboard Design Implementation</span>
+                </label>
+                <span class="tag approved">Aprovado</span>
+            </div>
+            <div class="task">
+                <input class="task-item" type="checkbox" name="task" id="item-2" checked />
+                <label for="item-2">
+                    <span class="label-text">Criar um Userflow</span>
+                </label>
+                <span class="tag progress">Em Curso</span>
+            </div>
+            <div class="task">
+                <input class="task-item" type="checkbox" name="task" id="item-3" />
+                <label for="item-3">
+                    <span class="label-text">Implementação da Aplicação</span>
+                </label>
+                <span class="tag review">Em Revisão</span>
+            </div>
+            <div class="task">
+                <input class="task-item" type="checkbox" name="task" id="item-4" />
+                <label for="item-4">
+                    <span class="label-text">Criar um Design Dashboard</span>
+                </label>
+                <span class="tag progress">Em Curso</span>
+            </div>
+            <div class="task">
+                <input class="task-item" type="checkbox" name="task" id="item-5" />
+                <label for="item-5">
+                    <span class="label-text">Criar uma Aplicação Web</span>
+                </label>
+                <span class="tag approved">Aprovado</span>
+            </div>
+            <div class="task">
+                <input class="task-item" type="checkbox" name="task" id="item-6" />
+                <label for="item-6">
+                    <span class="label-text">Design Interativo</span>
+                </label>
+                <span class="tag review">Em Revisão</span>
+            </div>
+            <div class="header upcoming">Próximas Tasks</div>
+            <div class="task">
+                <input class="task-item" type="checkbox" name="task" id="item-7" />
+                <label for="item-7">
+                    <span class="label-text">Implementação do Design Dashboard</span>
+                </label>
+                <span class="tag waiting">Em Espera</span>
+            </div>
+            <div class="task">
+                <input class="task-item" type="checkbox" name="task" id="item-8" />
+                <label for="item-8">
+                    <span class="label-text">Criar um Userflow</span>
+                </label>
+                <span class="tag waiting">Em Espera</span>
+            </div>
+            <div class="task">
+                <input class="task-item" type="checkbox" name="task" id="item-9" />
+                <label for="item-9">
+                    <span class="label-text">Implementação de Aplicação</span>
+                </label>
+                <span class="tag waiting">Em Espera</span>
+            </div>
+            <div class="task">
+                <input class="task-item" type="checkbox" name="task" id="item-10" />
+                <label for="item-10">
+                    <span class="label-text">Criar um Design Dashboard</span>
+                </label>
+                <span class="tag waiting">Em Espera</span>
+            </div>
+        </div>
+    </div>
+    <div class="right-bar">
+        <div class="top-part">
+            <img class="feather feather-users" src="./Icons/users_icon.svg" alt="users_icon">
+            <div class="count">6</div>
+        </div>
+        <div class="header">Cronograma</div>
+        <div class="right-content">
+            <div class="task-box yellow">
+                <div class="description-task">
+                    <div class="time">08:00 - 09:00 AM</div>
+                    <div class="task-name">Revisão do Produto</div>
+                </div>
+                <div class="more-button"></div>
+                <div class="members">
+                    <img src="./Images/img1.jpg" alt="member-1" />
+                    <img src="./Images/img2.jpg" alt="member-2" />
+                    <img src="./Images/img3.jpg" alt="member-3" />
+                    <img src="./Images/img4.jpg" alt="member-4" />
+                </div>
+            </div>
+            <div class="task-box blue">
+                <div class="description-task">
+                    <div class="time">10:00 - 11:00 AM</div>
+                    <div class="task-name">Reunião de Design</div>
+                </div>
+                <div class="more-buttons"></div>
+                <div class="members">
+                    <img src="./Images/img5.jpg" alt="member-1">
+                    <img src="./Images/img6.jpg" alt="member-2">
+                    <img src="./Images/img7.jpg" alt="member-3">
+                </div>
+            </div>
+            <div class="task-box red">
+                <div class="description-task">
+                    <div class="time">01:00 - 02:00 PM</div>
+                    <div class="task-name">Reunião da Equipe</div>
+                </div>
+                <div class="more-buttons"></div>
+                <div class="members">
+                    <img src="./Images/img8.jpg" alt="member-1">
+                    <img src="./Images/img9.jpg" alt="member-2">
+                    <img src="./Images/img1.jpg" alt="member-3">
+                    <img src="./Images/img2.jpg" alt="member-4">
+                </div>
+            </div>
+            <div class="task-box green">
+                <div class="description-task">
+                    <div class="time">03:00 - 04:00 PM</div>
+                    <div class="task-name">Evento de Entrega</div>
+                </div>
+                <div class="more-buttons"></div>
+                <div class="members">
+                    <img src="./Images/img3.jpg" alt="member-1">
+                    <img src="./Images/img4.jpg" alt="member-2">
+                    <img src="./Images/img5.jpg" alt="member-3">
+                    <img src="./Images/img6.jpg" alt="member-4">
+                    <img src="./Images/img7.jpg" alt="member-5">
+                </div>
+            </div>
+            <div class="task-box blue">
+                <div class="description-task">
+                    <div class="time">08:00 - 09:00 PM</div>
+                    <div class="task-name">Evento de Entrega</div>
+                </div>
+                <div class="more-buttons"></div>
+                <div class="members">
+                    <img src="./Images/img8.jpg" alt="member-1">
+                    <img src="./Images/img9.jpg" alt="member-2">
+                    <img src="./Images/img1.jpg" alt="member-3">
+                    <img src="./Images/img2.jpg" alt="member-4">
+                    <img src="./Images/img3.jpg" alt="member-5">
+                </div>
+            </div>
+            <div class="task-box yellow">
+                <div class="description-task">
+                    <div class="time">11:00 - 12:00 PM</div>
+                    <div class="task-name">Prática</div>
+                </div>
+                <div class="more-buttons"></div>
+                <div class="members">
+                    <img src="./Images/img4.jpg" alt="member-1">
+                    <img src="./Images/img5.jpg" alt="member-2">
+                    <img src="./Images/img6.jpg" alt="member-3">
+                    <img src="./Images/img7.jpg" alt="member-4">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
